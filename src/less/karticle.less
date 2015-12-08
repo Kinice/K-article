@@ -1,0 +1,95 @@
+//Created by Kinice 2015.12.7
+@mainColor : #499a80;
+@fontColor : #000;
+@blockquoteFontColor : #333;
+@blockquoteBgColor : #f1f1f1;
+@codeFontColor : #8a4324;
+@codeBgColor : #f1f1f1;
+@codeFont : monospace;
+.k-article{
+  padding:10px 20px;
+  h1{
+    font-size: 32px;
+    margin: 1.2em 0;
+  }
+  h2{
+    font-weight: normal;
+    font-size: 25px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+    margin: 1.2em 0;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 3px;
+    margin: 1.2em 0;
+  }
+  h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1em 0;
+  }
+  h5{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 1em 0;
+  }
+  h6{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1em 0;
+  }
+  p{
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 1em 0;
+  }
+  code{
+    font-family: @codeFont;
+    font-size: 13px;
+    color: @codeFontColor;
+    background-color: @codeBgColor;
+    padding: 0.1em 0.5em;
+    margin: 0 2px;
+    line-height: 1.5;
+  }
+  pre{
+    background-color: @codeBgColor;
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    margin: 1em 0;
+    code{
+      padding-left: 2em;
+    }
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  ul,ol{
+    box-sizing: border-box;
+    padding: 10px 0 10px 20px;
+    width: 100%;
+  }
+  ul li,ol li{
+    line-height: 1.5;
+    padding: 5px;
+  }
+  blockquote{
+    width: 100%;
+    background-color: @blockquoteBgColor;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    line-height: 1.5;
+    border-left: 8px @mainColor solid;
+    color:@blockquoteFontColor;
+  }
+  hr{
+    width: 100%;
+    border: 1px solid #888;
+  }
+}

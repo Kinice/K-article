@@ -1,0 +1,29 @@
+{
+  "name": "k-article",
+  "version": "1.0.0",
+  "description": "一个文章css样式。 version 1.0包含： * 以**markdown**写作转换出的**html**样式 * h2标题提取，添加锚点及滚动",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-minify-css": "^1.2.2",
+    "marked": "^0.3.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5",
+    "gulp-uglify": "^1.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kinice/K-article.git"
+  },
+  "author": "Kinice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kinice/K-article/issues"
+  },
+  "homepage": "https://github.com/Kinice/K-article#readme"
+}

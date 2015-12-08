@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>K-article Demo</title>
+    <link rel="stylesheet" href="../src/static/css/karticle.css"/>
+    <link rel="stylesheet" href="../src/static/css/pageStyle.css"/>
+</head>
+<body>
+<header class="g-hd">
+<h1>K-article使用说明与示例</h1>
+</header>
+<div class="g-bd">
+    <div class="g-inner">
+        <article class="k-article">
+            <h1>K-article使用说明与示例</h1>
+            <h2>引用说明</h2>
+            <h3>css的引用方法：</h3>
+            <p>首先在head中引用<code>karticle.css</code>。</p>
+            <pre><code>&lt;link rel="stylesheet" href="../src/static/css/karticle.css"/&gt; </code></pre>
+            <p>之后你需要一个容器，宽度自定。这个容器决定了这篇文章在什么位置、多宽。之后在这个容器里建造一个名叫<code>k-article</code>的容器：</p>
+            <pre><code>&lt;div class="g-inner"&gt;
+        &lt;div class="k-article"&gt;
+            //代码放在这里
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+            <p>就像上面的html一样，把文章的代码放在里面就可以了</p>
+            <h3>js的引用方法：</h3>
+            <p>很遗憾，js现在还没有开始写，但以预想的方式写的话，只需要在body最下面引用js文件即可。</p>
+            <pre><code>&lt;script src="../src/static/js/karticle.js"&gt;&lt;/script&gt;</code></pre>
+
+            <h2>格式说明</h2>
+            <h3>css格式说明</h3>
+            <p>上面的引用说明中已经展示了<code>h1</code>、<code>h2</code>、<code>h3</code>、<code>code</code>、<code>pre+code</code><code>p</code>的格式。下面是其他的常用代码格式示例：</p>
+            <h4>这是h4</h4>
+            <h5>这是h5</h5>
+            <h6>这是h6</h6>
+            <p>这是a链接：<a href="#">这是a链接</a></p>
+            <em>这是斜体</em>
+            <strong>这是粗体</strong>
+            <p>这是比容器大的图片：</p>
+            <img src="../src/static/images/meizi.jpg"/>
+            <p>这是比容器小的图片：</p>
+            <img src="../src/static/images/meizi2.jpg"/>
+            <p>这是列表：</p>
+            <ul>
+                <li>列表1列表1列表1</li>
+                <li>列表2列表2</li>
+                <li>列表3</li>
+            </ul>
+            <ol>
+                <li>列表1列表1列表1</li>
+                <li>列表2列表2</li>
+                <li>列表3</li>
+            </ol>
+            <p>下面是blockquote引用的文字块：</p>
+            <blockquote>
+                <p>当您在使用gulp构建您的项目时，您只需要 require Browsersync 模块, 利用API 并进行 选项配置。 以下是一些流行项目中常见的用例， 如 谷歌的网络入门套件 和其他项目。</p>
+            </blockquote>
+            <h2>js使用后效果展示</h2>
+            <p>可惜，还没写。。。</p>
+            <h6>这是华丽丽的分割线↓↓↓↓↓↓↓↓↓↓→&lt;hr/&gt;</h6>
+            <hr/>
+            <h6>这是华丽丽的分割线↑↑↑↑↑↑↑↑↑↑→&lt;hr/&gt;</h6>
+            <h2>声明</h2>
+            <p>这是自己写着玩自己用的小玩意儿，够用就好，没有花太多的时间。如果有朋友觉的还不错，蛮好看，尽管拿去用就好。</p>
+            <p>使用less+gulp的方式开发，js是原生写的，感兴趣的朋友可以看一下代码。</p>
+            <p>觉得配色方面或者格式有不符合自己审美的朋友，可以给本项目一个分支，嫌麻烦的话直接自己写个覆盖就可以了。</p>
+            <p><strong>要记着作者：</strong>Kinice</p>
+        </article>
+    </div>
+</div>
+</body>
+</html>
