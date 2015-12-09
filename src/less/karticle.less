@@ -7,6 +7,7 @@
 @codeBgColor : #f1f1f1;
 @codeFont : monospace;
 .k-article{
+  overflow: hidden;
   padding:10px 20px;
   h1{
     font-size: 32px;
@@ -57,9 +58,9 @@
     font-size: 13px;
     color: @codeFontColor;
     background-color: @codeBgColor;
-    padding: 0.1em 0.5em;
-    margin: 0 2px;
+    padding: 0.1em 0.2em;
     line-height: 1.5;
+    vertical-align: middle;
   }
   pre{
     background-color: @codeBgColor;
@@ -67,6 +68,7 @@
     width: 100%;
     padding: 1em 0;
     margin: 1em 0;
+    overflow: auto;
     code{
       padding-left: 2em;
     }
@@ -98,5 +100,14 @@
   hr{
     width: 100%;
     border: 1px solid #888;
+  }
+}
+@media screen and (max-width: 800px){
+  .k-article{
+    pre{
+      code{
+        padding-left: 1em;
+      }
+    }
   }
 }
