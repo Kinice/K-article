@@ -7,7 +7,7 @@
 @codeBgColor : #f1f1f1;
 @codeFont : monospace;
 .k-article{
-  overflow: hidden;
+  position: relative;
   padding:10px 20px;
   h1{
     font-size: 32px;
@@ -100,6 +100,23 @@
   hr{
     width: 100%;
     border: 1px solid #888;
+  }
+  .k-article-list{
+    box-sizing: border-box;
+    display: inline-block;
+    padding:10px;
+    background-color: #bbb;
+    position: absolute;
+    top:0;
+    left: -140px;
+    z-index: 10;
+    ul{
+      padding:0;
+      li{
+        list-style: none;
+        font-size: 14px;
+      }
+    }
   }
 }
 @media screen and (max-width: 800px){
