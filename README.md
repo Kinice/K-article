@@ -1,5 +1,10 @@
 # K-article
 一个文章css样式。
+##version 1.1 更新内容
+
+* ie、firefox兼容了，先在应该全部兼容
+* 一些样式的微调
+
 version 1包含：
 * 以**markdown**写作转换出的**html**样式
 * h2标题提取，添加锚点及滚动
