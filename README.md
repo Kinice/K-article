@@ -2,7 +2,7 @@
 一个文章css样式。
 ##version 1.1 更新内容
 
-* ie、firefox兼容了，先在应该全部兼容
+* ie、firefox兼容了，现在应该全部兼容
 * 一些样式的微调
 
 version 1包含：
