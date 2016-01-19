@@ -25,6 +25,6 @@ JS方面，考虑到再引个jquery麻烦，就用原生写。
 
 ###现在demo页可以查看啦
 
-地址是这个：[K-article使用说明与示例](http://xuyingrong.sinaapp.com/views/demo.html)
+地址是这个：[K-article使用说明与示例](http://xuyingrong.sinaapp.com/K-article/views/demo.html)
 
 这个是借用的别人的服务器，等自己的服务器配置好了就迁移过去。
