@@ -25,4 +25,4 @@ JS方面，考虑到再引个jquery麻烦，就用原生写。
 
 ###现在demo页可以查看啦
 
-地址是这个：[K-article使用说明与示例](Kinice.github.io/K-article)
+地址是这个：[K-article使用说明与示例](http://Kinice.github.io/K-article)
