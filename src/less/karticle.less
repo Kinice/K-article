@@ -1,5 +1,5 @@
 //Created by Kinice 2015.12.7
-@font:'微软雅黑','microsoft yahei',sans-serif,Arial;
+@font:"lucida grande", "lucida sans unicode", lucida, helvetica, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 @mainColor : #499a80;
 @fontColor : #000;
 @blockquoteFontColor : #666;
@@ -7,6 +7,7 @@
 @codeFontColor : #8a4324;
 @codeBgColor : #f1f1f1;
 @codeFont : monospace;
+@tableBorder: 1px solid #ddd;
 .k-article{
   font-size: 16px;
   font-family: @font;
@@ -47,6 +48,7 @@
   p{
     line-height: 1.5;
     margin: 1em 0;
+    word-break: break-word;
   }
   a{
     color: @mainColor;
@@ -110,6 +112,20 @@
   hr{
     width: 100%;
     border: 1px solid #888;
+  }
+  table{
+    width:100%;
+    margin-bottom: 20px;
+    border:@tableBorder;
+    border-collapse: collapse;
+    th{
+      font-weight: bold;
+    }
+    td,th{
+      padding: 8px;
+      border-left: @tableBorder;
+      border-top: @tableBorder;
+    }
   }
   .k-article-list{
     box-sizing: border-box;
