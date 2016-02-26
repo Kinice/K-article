@@ -2,12 +2,13 @@
 @font:'微软雅黑','microsoft yahei',sans-serif,Arial;
 @mainColor : #499a80;
 @fontColor : #000;
-@blockquoteFontColor : #333;
+@blockquoteFontColor : #666;
 @blockquoteBgColor : #f1f1f1;
 @codeFontColor : #8a4324;
 @codeBgColor : #f1f1f1;
 @codeFont : monospace;
 .k-article{
+  font-size: 16px;
   font-family: @font;
   position: relative;
   padding:10px 20px;
@@ -45,7 +46,6 @@
   }
   p{
     line-height: 1.5;
-    font-size: 16px;
     margin: 1em 0;
   }
   a{
@@ -80,6 +80,7 @@
     height: auto;
   }
   ul,ol{
+    font-size: 15px;
     box-sizing: border-box;
     padding: 10px 0 10px 20px;
     width: 100%;
@@ -102,8 +103,9 @@
     padding-top: 1px;
     padding-bottom: 1px;
     line-height: 1.5;
-    border-left: 8px @mainColor solid;
+    border-left: 5px @mainColor solid;
     color:@blockquoteFontColor;
+    font-size: 14px;
   }
   hr{
     width: 100%;
