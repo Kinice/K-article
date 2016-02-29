@@ -1,5 +1,12 @@
 # K-article
 一个文章css样式。
+
+##version 1.2 更新内容
+
+* 更改了blockquote引用部分的外观
+* 添加了**表格**的样式
+* 更改了有关的字体，包括fontfanmily、size等以及font-smoothing:antialased
+
 ##version 1.1 更新内容
 
 * ie、firefox兼容了，现在应该全部兼容
