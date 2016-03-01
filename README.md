@@ -22,14 +22,13 @@ JS方面，考虑到再引个jquery麻烦，就用原生写。
 
 现在兼容性方面，除ie的浏览器应该都可以用了。
 
->也可以写个jquery版的
-
---我心里这样说。
 
 ***
 
-嗯。。其实就是写着自己用方便的。
+嗯。。其实就是写个自己用着方便的。
 
 ###现在demo页可以查看啦
 
 地址是这个：[K-article使用说明与示例](http://Kinice.github.io/K-article)
+
+使用**github.io**,感谢[修昊](https://github.com/Svtter)同学！
