@@ -1,6 +1,12 @@
 # K-article
 一个文章css样式。
 
+##version 0.1.3 更新内容
+
+* 修改了code pre的样式
+* 包括code字体、颜色、边框、边距等
+* 其他一点样式的微调
+
 ##version 0.1.2 更新内容
 
 * 更改了blockquote引用部分的外观
