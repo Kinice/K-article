@@ -2,11 +2,11 @@
 @font:"lucida grande", "lucida sans unicode", lucida, helvetica, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 @mainColor : #499a80;
 @fontColor : #000;
-@blockquoteFontColor : #666;
+@blockquoteFontColor : #555;
 @blockquoteBgColor : #f1f1f1;
-@codeFontColor : #8a4324;
+@codeFontColor : #650004;
 @codeBgColor : #f1f1f1;
-@codeFont : monospace;
+@codeFont : Consolas, Monaco, 'Andale Mono', monospace;
 @tableBorder: 1px solid #ddd;
 .k-article{
   -webkit-font-smoothing:antialiased;
@@ -59,15 +59,19 @@
     color: @codeFontColor;
   }
   code{
+    border: 1px solid #ddd;
+    border-radius: 3px;
     font-family: @codeFont;
-    font-size: 13px;
+    font-size: 14px;
     color: @codeFontColor;
     background-color: @codeBgColor;
-    padding: 0.1em 0.2em;
-    line-height: 1.5;
+    padding: 0.12em 0.2em;
     vertical-align: middle;
+    margin:0 1px;
   }
   pre{
+    border: 1px solid #ddd;
+    border-radius: 3px;
     background-color: @codeBgColor;
     display: block;
     width: 100%;
@@ -75,7 +79,9 @@
     margin: 1em 0;
     overflow: auto;
     code{
-      padding-left: 2em;
+      border: 0;
+      padding-left: 1.8em;
+      line-height: 1.5;
     }
   }
   img{

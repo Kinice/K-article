@@ -12,7 +12,6 @@ function createList(){
     var kArticle = document.getElementsByClassName('k-article');
         kArticle[0].appendChild(div);
     var h2 = kArticle[0].getElementsByTagName('h2');
-
     for(var j = 0; j < h2.length; j++){
         h2[j].setAttribute('name',j+'a');
         h2[j].setAttribute('id',j+'a');
