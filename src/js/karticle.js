@@ -37,25 +37,29 @@
             var listContent = document.getElementById('k-article-list');
             var article = document.getElementsByClassName('k-article');
             var scrTop = this.getScrolltop();
+            if(article[0].offsetLeft > listContent.offsetWidth){
+                listContent.style.left = 0 + 'px';
+            }else{
 
+            }
             if(scrTop > article[0].offsetTop){
                 listContent.style.position = 'fixed';
-                listContent.style.left = article[0].offsetLeft - listContent.offsetWidth - 10 + 'px';
+                listContent.style.left = article[0].offsetLeft - listContent.offsetWidth - 5 + 'px';
                 listContent.style.top = 0 + 'px';
             }else{
                 listContent.style.position = 'absolute';
-                listContent.style.left = -(listContent.offsetWidth + 10) + 'px';
+                listContent.style.left = -(listContent.offsetWidth + 5) + 'px';
                 listContent.top = 0 + 'px';
             }
         },
         getScrolltop:function(){
-            var scrtop = new Number();
+            var scrTop = new Number();
             if(document.body.scrollTop){
-                scrtop = document.body.scrollTop;
+                scrTop = document.body.scrollTop;
             }else{
-                scrtop = document.documentElement.scrollTop;
+                scrTop = document.documentElement.scrollTop;
             }
-            return scrtop;
+            return scrTop;
         },
         init:function(){
             this.createList();
