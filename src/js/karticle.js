@@ -1,62 +1,70 @@
 /**
  * Created by kinice on 15/12/9.
  */
-function createList(){
-    var div = document.createElement('div');
-        div.setAttribute('class','k-article-list');
-        div.setAttribute('id','k-article-list');
-    var list = document.createElement('ul');
-        div.appendChild(list);
+;(function(){
+    var karticle = {
+        createList:function(){
+            var article = document.getElementsByClassName('k-article');
+            var h2 = article[0].getElementsByTagName('h2');
+            var listContent = document.createElement('div');
+            var ul = document.createElement('ul');
+            var list = [],link = [],text = [];
 
-    var text;
-    var kArticle = document.getElementsByClassName('k-article');
-        kArticle[0].appendChild(div);
-    var h2 = kArticle[0].getElementsByTagName('h2');
-    for(var j = 0; j < h2.length; j++){
-        h2[j].setAttribute('name',j+'a');
-        h2[j].setAttribute('id',j+'a');
+            //get all h2 words
+            for(var i = 0; i<h2.length; i++){
+                h2[i].setAttribute('name',h2[i].innerHTML);
+                h2[i].setAttribute('id',h2[i].innerHTML);
+            }
+
+            //create list
+            listContent.setAttribute('class','k-article-list');
+            listContent.setAttribute('id','k-article-list');
+            listContent.appendChild(ul);
+
+            for(var i = 0; i<h2.length; i++){
+                list[i] = document.createElement('li');
+                link[i] = document.createElement('a');
+                link[i].setAttribute('href','#'+h2[i].innerHTML);
+                text[i] = document.createTextNode(h2[i].innerHTML);
+                link[i].appendChild(text[i]);
+                list[i].appendChild(link[i]);
+                ul.appendChild(list[i]);
+            }
+
+            article[0].appendChild(listContent);
+        },
+        setPosition:function(){
+            var listContent = document.getElementById('k-article-list');
+            var article = document.getElementsByClassName('k-article');
+            var scrTop = this.getScrolltop();
+
+            if(scrTop > article[0].offsetTop){
+                listContent.style.position = 'fixed';
+                listContent.style.left = article[0].offsetLeft - listContent.offsetWidth - 10 + 'px';
+                listContent.style.top = 0 + 'px';
+            }else{
+                listContent.style.position = 'absolute';
+                listContent.style.left = -(listContent.offsetWidth + 10) + 'px';
+                listContent.top = 0 + 'px';
+            }
+        },
+        getScrolltop:function(){
+            var scrtop = new Number();
+            if(document.body.scrollTop){
+                scrtop = document.body.scrollTop;
+            }else{
+                scrtop = document.documentElement.scrollTop;
+            }
+            return scrtop;
+        },
+        init:function(){
+            this.createList();
+            this.setPosition();
+        }
     }
-
-    var h2list = new Array();
-    var area = new Array();
-
-    for(var i = 0; i < h2.length; i++){
-        h2list[i] = document.createElement('li');
-        area[i] = document.createElement('a');
-        text = document.createTextNode(h2[i].innerHTML);
-        area[i].setAttribute('href','#'+i+'a');
-        area[i].appendChild(text);
-        h2list[i].appendChild(area[i]);
-        list.appendChild(h2list[i]);
-    }
-}
-
-function setPosition(){
-    var div = document.getElementById('k-article-list');
-    var kArticle = document.getElementsByClassName('k-article');
-    var sctp = getScrollTop();
-    if(sctp>kArticle[0].offsetTop){
-        div.style.position = 'fixed';
-        div.style.left = kArticle[0].offsetLeft - div.offsetWidth-10 + 'px';
-        div.style.top = 0 + 'px';
-    }else{
-        div.style.position = 'absolute';
-        div.style.left = -(div.offsetWidth+10)+'px';
-        div.top = 0 + 'px';
-    }
-}
-
-function getScrollTop(){
-    var scrotop = new Number();
-    if(document.body.scrollTop){
-        scrotop = document.body.scrollTop;
-    }else{
-        scrotop = document.documentElement.scrollTop;
-    }
-    return scrotop;
-}
-createList();
-setPosition();
+    window.karticle = karticle;
+})();
+karticle.init();
 window.onscroll = function(){
-    setPosition();
+    karticle.setPosition();
 }
