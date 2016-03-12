@@ -21,6 +21,7 @@
             listContent.setAttribute('id','k-article-list');
             listContent.appendChild(ul);
 
+            //add list href into list
             for(var i = 0; i<h2.length; i++){
                 list[i] = document.createElement('li');
                 link[i] = document.createElement('a');
@@ -31,17 +32,22 @@
                 ul.appendChild(list[i]);
             }
 
+            //append list into page
             article[0].appendChild(listContent);
         },
         setPosition:function(){
             var listContent = document.getElementById('k-article-list');
             var article = document.getElementsByClassName('k-article');
             var scrTop = this.getScrolltop();
+
+            //get left offset
             if(article[0].offsetLeft > listContent.offsetWidth){
                 listContent.style.left = 0 + 'px';
             }else{
 
             }
+
+            //get top scroll
             if(scrTop > article[0].offsetTop){
                 listContent.style.position = 'fixed';
                 listContent.style.left = article[0].offsetLeft - listContent.offsetWidth - 5 + 'px';
