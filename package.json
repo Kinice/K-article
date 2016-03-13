@@ -4,6 +4,8 @@
   "description": "一个文章css样式。 version 1.0包含： * 以**markdown**写作转换出的**html**样式 * h2标题提取，添加锚点及滚动",
   "main": "gulpfile.js",
   "dependencies": {
+    "array-differ": "^1.0.0",
+    "array-uniq": "^1.0.2",
     "gulp-minify-css": "^1.2.2",
     "marked": "^0.3.5"
   },
