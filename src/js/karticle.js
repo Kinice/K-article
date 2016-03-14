@@ -21,6 +21,7 @@
             listContent.setAttribute('id','k-article-list');
             listContent.appendChild(ul);
 
+            //add list href into list
             for(var i = 0; i<h2.length; i++){
                 list[i] = document.createElement('li');
                 link[i] = document.createElement('a');
@@ -31,6 +32,7 @@
                 ul.appendChild(list[i]);
             }
 
+            //append list into page
             article[0].appendChild(listContent);
         },
         setPosition:function(){
