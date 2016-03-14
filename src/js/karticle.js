@@ -21,6 +21,7 @@
             listContent.setAttribute('id','k-article-list');
             listContent.appendChild(ul);
 
+            //add list href into list
             for(var i = 0; i<h2.length; i++){
                 list[i] = document.createElement('li');
                 link[i] = document.createElement('a');
@@ -31,31 +32,52 @@
                 ul.appendChild(list[i]);
             }
 
+            //append list into page
             article[0].appendChild(listContent);
         },
         setPosition:function(){
             var listContent = document.getElementById('k-article-list');
             var article = document.getElementsByClassName('k-article');
             var scrTop = this.getScrolltop();
-
+//            if(article[0].offsetLeft < listContent.offsetWidth){
+//                if(scrTop > article[0].offsetTop){
+//                    listContent.style.position = 'fixed';
+//                    listContent.style.top = 0 + 'px';
+//                    listContent.style.left = 0 + 'px';
+//                }else{
+//                    listContent.style.position = 'absolute';
+//                    listContent.top = 0 + 'px';
+//                    listContent.style.left = 0 + 'px';
+//                }
+//            }else{
+//                if(scrTop > article[0].offsetTop){
+//                    listContent.style.position = 'fixed';
+//                    listContent.style.left = article[0].offsetLeft - listContent.offsetWidth - 5 + 'px';
+//                    listContent.style.top = 0 + 'px';
+//                }else{
+//                    listContent.style.position = 'absolute';
+//                    listContent.style.left = -(listContent.offsetWidth + 5) + 'px';
+//                    listContent.top = 0 + 'px';
+//                }
+//            }
             if(scrTop > article[0].offsetTop){
                 listContent.style.position = 'fixed';
-                listContent.style.left = article[0].offsetLeft - listContent.offsetWidth - 10 + 'px';
+                listContent.style.left = article[0].offsetLeft - listContent.offsetWidth - 5 + 'px';
                 listContent.style.top = 0 + 'px';
             }else{
                 listContent.style.position = 'absolute';
-                listContent.style.left = -(listContent.offsetWidth + 10) + 'px';
+                listContent.style.left = -(listContent.offsetWidth + 5) + 'px';
                 listContent.top = 0 + 'px';
             }
         },
         getScrolltop:function(){
-            var scrtop = new Number();
+            var scrTop = new Number();
             if(document.body.scrollTop){
-                scrtop = document.body.scrollTop;
+                scrTop = document.body.scrollTop;
             }else{
-                scrtop = document.documentElement.scrollTop;
+                scrTop = document.documentElement.scrollTop;
             }
-            return scrtop;
+            return scrTop;
         },
         init:function(){
             this.createList();
