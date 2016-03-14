@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "gulp-minify-css": "^1.2.2",
+    "highlight.js": "^9.2.0",
     "marked": "^0.3.5"
   },
   "devDependencies": {

@@ -37,11 +37,27 @@
             var listContent = document.getElementById('k-article-list');
             var article = document.getElementsByClassName('k-article');
             var scrTop = this.getScrolltop();
-            if(article[0].offsetLeft > listContent.offsetWidth){
-                listContent.style.left = 0 + 'px';
-            }else{
-
-            }
+//            if(article[0].offsetLeft < listContent.offsetWidth){
+//                if(scrTop > article[0].offsetTop){
+//                    listContent.style.position = 'fixed';
+//                    listContent.style.top = 0 + 'px';
+//                    listContent.style.left = 0 + 'px';
+//                }else{
+//                    listContent.style.position = 'absolute';
+//                    listContent.top = 0 + 'px';
+//                    listContent.style.left = 0 + 'px';
+//                }
+//            }else{
+//                if(scrTop > article[0].offsetTop){
+//                    listContent.style.position = 'fixed';
+//                    listContent.style.left = article[0].offsetLeft - listContent.offsetWidth - 5 + 'px';
+//                    listContent.style.top = 0 + 'px';
+//                }else{
+//                    listContent.style.position = 'absolute';
+//                    listContent.style.left = -(listContent.offsetWidth + 5) + 'px';
+//                    listContent.top = 0 + 'px';
+//                }
+//            }
             if(scrTop > article[0].offsetTop){
                 listContent.style.position = 'fixed';
                 listContent.style.left = article[0].offsetLeft - listContent.offsetWidth - 5 + 'px';

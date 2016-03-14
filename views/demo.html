@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <title>K-article Demo</title>
-    <link rel="stylesheet" href="../src/static/css/karticle.css"/>
     <link rel="stylesheet" href="../src/static/css/pageStyle.css"/>
+    <link rel="stylesheet" href="../src/static/css/karticle.css"/>
+    <link rel="stylesheet" href="../src/static/css/github-gist.css"/>
+    <script src="../src/static/js/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </head>
 <body>
 <header class="g-hd">
@@ -22,9 +27,9 @@
             <h2>引用说明</h2>
             <h3>css的引用方法：</h3>
             <p>首先在head中引用<code>karticle.css</code>。</p>
-            <pre><code>&lt;link rel="stylesheet" href="../src/static/css/karticle.css"/&gt; </code></pre>
+            <pre><code class="html">&lt;link rel="stylesheet" href="../src/static/css/karticle.css"/&gt; </code></pre>
             <p>之后你需要一个容器，宽度自定。这个容器决定了这篇文章在什么位置、多宽。之后在这个容器里建造一个名叫<code>k-article</code>的容器：</p>
-            <pre><code>&lt;div class="g-inner"&gt;
+            <pre><code class="html">&lt;div class="g-inner"&gt;
         &lt;div class="k-article"&gt;
             //代码放在这里
         &lt;/div&gt;
@@ -32,7 +37,7 @@
             <p>就像上面的html一样，把文章的代码放在里面就可以了</p>
             <h3>js的引用方法：</h3>
             <p>在body最下面引用js文件即可。</p>
-            <pre><code>&lt;script src="../src/static/js/karticle.min.js"&gt;&lt;/script&gt;</code></pre>
+            <pre><code class="html">&lt;script src="../src/static/js/karticle.min.js"&gt;&lt;/script&gt;</code></pre>
             <h2>格式说明</h2>
             <h3>css格式说明</h3>
             <p>上面的引用说明中已展示了<code>h1</code>、<code>h2</code>、<code>h3</code>、<code>code</code>、<code>pre+code</code>、<code>p</code>的格式。下面是其他的常用代码格式示例：</p>
