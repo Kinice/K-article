@@ -1,5 +1,8 @@
 # K-article
 一个文章css样式。
+## 放到npm里面去啦
+
+现在只要`npm install k-article`就可以了呢～
 
 ##version 0.1.3 更新内容
 
