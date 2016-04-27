@@ -4,7 +4,11 @@
 
 现在只要`npm install k-article`就可以了呢～
 
-##version 0.1.3 更新内容
+## Highlight
+
+经测试，与市面上的所有Highlight库不冲突。
+
+## version 0.1.3 更新内容
 
 * 修改了code pre的样式
 * 包括code字体、颜色、边框、边距等
