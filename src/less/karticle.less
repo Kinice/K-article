@@ -71,17 +71,19 @@
     margin:0 1px;
   }
   pre{
+    box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 3px;
     background-color: @codeBgColor;
     display: block;
     width: 100%;
-    padding: 1em 0;
+    padding: 1em;
     margin: 1em 0;
     overflow: auto;
     code{
+      padding: 0;
+      margin: 0;
       border: 0;
-      padding-left: 1.4em;
       line-height: 1.5;
     }
   }

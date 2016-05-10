@@ -1,5 +1,10 @@
 # K-article
 一个文章css样式。
+
+## 更新bug
+
+之前翻了一个错误，code是不能设置padding的！现已修复。
+
 ## 放到npm里面去啦
 
 现在只要`npm install k-article`就可以了呢～
