@@ -22,10 +22,9 @@ gulp.task('script', function(){
 });
 gulp.task('browser-sync',['script','less'],function(){
     browserSync.init({
-            proxy: 'http://localhost:63342/K-article/views/demo.html',
-            baseDir: './',
-            port: 63342,
-            uiPort: 63343
+            server:{
+                baseDir: "./"
+            }
     });
     gulp.watch('src/less/*.less',['less']);
     gulp.watch('src/js/*.js',['script']);
