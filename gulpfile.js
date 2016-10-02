@@ -12,13 +12,15 @@ gulp.task('less', function(){
         .pipe(less())
         .pipe(minifycss())
         .pipe(gulp.dest('src/static/css'))
+        .pipe(gulp.dest('./'))
         .pipe(reload({stream:true}));
 });
 gulp.task('script', function(){
     gulp.src('src/js/karticle.js')
         .pipe(rename({suffix:'.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('src/static/js'));
+        .pipe(gulp.dest('src/static/js'))
+        .pipe(gulp.dest('./'));
 });
 gulp.task('browser-sync',['script','less'],function(){
     browserSync.init({
