@@ -1,17 +1,17 @@
 # K-article
 一个文章css样式。
 
-## 更新bug
+## Usage
 
-之前犯了一个错误，现已修复。
+[K-article使用说明与示例](http://Kinice.github.io/K-article)
 
 ## 放到npm里面去啦
 
 现在只要`npm install k-article`就可以了呢～
 
-## Highlight
+## version 0.2.0 更新内容
 
-经测试，与市面上的所有Highlight库不冲突。
+* 加入了黑幕功能
 
 ## version 0.1.3 更新内容
 
@@ -45,8 +45,4 @@ JS方面，考虑到再引个jquery麻烦，就用原生写。
 
 嗯。。其实就是写个自己用着方便的。
 
-### 现在demo页可以查看啦
-
-地址是这个：[K-article使用说明与示例](http://Kinice.github.io/K-article)
-
-使用**github.io**,感谢[修昊](https://github.com/Svtter)同学！
+感谢[修昊](https://github.com/Svtter)同学！

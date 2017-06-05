@@ -1,6 +1,6 @@
 {
   "name": "k-article",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "一个文章css样式。 version 1.0包含： * 以**markdown**写作转换出的**html**样式 * h2标题提取，添加锚点及滚动",
   "main": "gulpfile.js",
   "dependencies": {
